@@ -27,9 +27,9 @@ exports.thousandBot = functions.database.ref('/game/{roomName}')
             return Promise.resolve()
         }
     })
-
+    
 function isBot(player) {
-    return !!(BOTNAME_REGEX).exec(player.id)
+    return !!(BOTNAME_REGEX).exec(player.id.toLowerCase())
 }
 
 function toPreferredAction(state) {

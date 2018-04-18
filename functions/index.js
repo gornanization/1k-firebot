@@ -45,7 +45,7 @@ function getPreferredAction(state) {
         .value() || null
 }
 
-/* For debuggind purpose...
+/* For debugging purpose...
 exports.thousandBotDebug = functions.https.onRequest((request, response) => {
     var ref = admin.database().ref(`game${request.params[0]}`)
 
